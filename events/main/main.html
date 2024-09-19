@@ -1,0 +1,76 @@
+
+<script>
+    if(localStorage.getItem("userID") == null){
+        location.href = "../auth/auth.html"
+    }
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <script src="main.js" defer></script>
+    <!-- Подключение стилей Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .event-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand name__user" href="#"><span>Привет какой то чел</span></a>
+            <!-- <a class="navbar-bard exit" href=""></a>  -->
+            <a class="navbar-brand exit " href="#">Выйти</a>
+        </div>
+    </nav>
+
+    <!-- Блок с мероприятиями -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Карточка мероприятия 1 -->
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="" class="card-img-top" alt="Мероприятие 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Название мероприятия 1</h5>
+                        <p class="card-text">Описание мероприятия 1.</p>
+                        <p class="card-text">Дата: 01.01.2025</p>
+                        <p class="card-text">Цена: $50</p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка мероприятия 2 -->
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="" class="card-img-top" alt="Мероприятие 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Название мероприятия 2</h5>
+                        <p class="card-text">Описание мероприятия 2.</p>
+                        <p class="card-text">Дата: 02.02.2025</p>
+                        <p class="card-text">Цена: $60</p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Добавьте больше карточек мероприятий по аналогии -->
+        </div>
+    </div>
+
+    <!-- Подключение скриптов Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

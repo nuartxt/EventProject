@@ -1,0 +1,78 @@
+<script>
+    if (localStorage.getItem('admin') == null) {
+        location.href = 'siginUp/siginUp.html'
+    }
+</script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель</title>
+    <!-- Подключение стилей Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Форма добавления мероприятия -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Добавление мероприятия
+                    </div>
+                    <div class="card-body">
+                        <form id="eventForm">
+                            <div class="form-group">
+                                <label for="img">Изображение</label>
+                                <input type="text" class="form-control" id="img" name="img" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="title">Заголовок</label>
+                                <input type="text" class="form-control" id="title" name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Описание</label>
+                                <textarea class="form-control" id="description" name="description" rows="3"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="data">Дата</label>
+                                <input type="date" class="form-control" id="data" name="data" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="price">Цена</label>
+                                <input type="number" class="form-control" id="price" name="price" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="status">Статус</label>
+                                <select class="form-control" id="status" name="status" required>
+                                    <option value="true">Активно</option>
+                                    <option value="false">Неактивно</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="site">Сайт</label>
+                                <input type="text" class="form-control" id="site" name="site">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Добавить мероприятие</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение скриптов Bootstrap и JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
